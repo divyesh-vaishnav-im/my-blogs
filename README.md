@@ -9,11 +9,12 @@ Personal blog articles on technology, cybersecurity, self-improvement, and life.
 
 | # | Title | Date | GitHub Pages | Medium |
 |---|-------|------|:---:|:---:|
-| 1 | The Power of Teaching: How One Classroom Confrontation Reveals the Hidden Dynamics of Authority and Historical Truth | 2026-05-31 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-31-the-power-of-teaching-how-one-classroom-confrontation-reveal/) | ⏳ Pending |
-| 2 | The Silent Language of Fathers: When Love Speaks Without Words | 2026-05-31 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-31-the-silent-language-of-fathers-when-love-speaks-without-word/) | [Read](https://medium.com/@divyesh.vaishanv) |
-| 3 | The Unrequited Love of a Bird: A Cautionary Tale of Faithfulness and Communication | 2026-05-31 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-31-the-unrequited-love-of-a-bird-a-cautionary-tale-of-faithfuln/) | [Read](https://medium.com/@divyesh.vaishanv) |
-| 4 | The Art of Setting Boundaries: Embracing Self-Worth in Relationships | 2026-05-29 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-29-the-art-of-setting-boundaries-embracing-self-worth-in-relati/) | [Read](https://medium.com/@divyesh.vaishanv) |
-| 5 | The Ultimate Guide to Understanding Key Concepts in System Design and AI | 2026-05-29 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-29-the-ultimate-guide-to-understanding-key-concepts-in-system-d/) | [Read](https://medium.com/@divyesh.vaishanv) |
+| 1 | AI-Assisted Cyber Threats: The New Cybersecurity Reality | 2026-05-31 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-31-ai-assisted-cyber-threats-the-new-cybersecurity-reality/) | ⏳ Pending |
+| 2 | The Power of Teaching: How One Classroom Confrontation Reveals the Hidden Dynamics of Authority and Historical Truth | 2026-05-31 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-31-the-power-of-teaching-how-one-classroom-confrontation-reveal/) | ⏳ Pending |
+| 3 | The Silent Language of Fathers: When Love Speaks Without Words | 2026-05-31 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-31-the-silent-language-of-fathers-when-love-speaks-without-word/) | [Read](https://medium.com/@divyesh.vaishanv) |
+| 4 | The Unrequited Love of a Bird: A Cautionary Tale of Faithfulness and Communication | 2026-05-31 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-31-the-unrequited-love-of-a-bird-a-cautionary-tale-of-faithfuln/) | [Read](https://medium.com/@divyesh.vaishanv) |
+| 5 | The Art of Setting Boundaries: Embracing Self-Worth in Relationships | 2026-05-29 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-29-the-art-of-setting-boundaries-embracing-self-worth-in-relati/) | [Read](https://medium.com/@divyesh.vaishanv) |
+| 6 | The Ultimate Guide to Understanding Key Concepts in System Design and AI | 2026-05-29 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-05-29-the-ultimate-guide-to-understanding-key-concepts-in-system-d/) | [Read](https://medium.com/@divyesh.vaishanv) |
 
 ## About
 
