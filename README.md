@@ -26,4 +26,4 @@ reviewed and published by Divyesh Vaishnav.
 Follow me on [Medium](https://medium.com/@divyesh.vaishanv) for the latest articles.
 
 ---
-*Last updated: 31 May 2026*
+*Last updated: 02 Jun 2026*
