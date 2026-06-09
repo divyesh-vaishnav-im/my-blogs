@@ -9,7 +9,7 @@ Personal blog articles on technology, cybersecurity, self-improvement, and life.
 
 | # | Title | Date | GitHub Pages | Medium |
 |---|-------|------|:---:|:---:|
-| 1 | Vulnerability Management in the AI Era: A Comprehensive Blueprint for Modern Cyber Defense | 2026-06-08 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-08-vulnerability-management-in-the-ai-era-a-comprehensive-bluep/) | ⏳ Pending |
+| 1 | Vulnerability Management in the AI Era: Transforming Cyber Defense for Automated Threats | 2026-06-09 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-08-vulnerability-management-in-the-ai-era-a-comprehensive-bluep/) | ⏳ Pending |
 | 2 | How to Secure AI Systems from Prompt Injection Attacks: A CISO's Guide to Enterprise Defense | 2026-06-07 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-07-how-to-secure-ai-systems-from-prompt-injection-attacks-a-cis/) | [Read](https://medium.com/@divyesh.vaishanv/how-to-secure-ai-systems-from-prompt-injection-attacks-a-cisos-guide-to-enterprise-defense-63937711bcc9?sk=242f5ac72909f3a4eb4f3304f0441955) |
 | 3 | AI-Powered Phishing and Deepfake Attacks: How to Stay Protected in the Age of Intelligent Cyber Threats | 2026-06-07 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-07-ai-powered-phishing-and-deepfake-attacks-how-to-stay-protect/) | [Read](https://medium.com/@divyesh.vaishanv/ai-powered-phishing-and-deepfake-attacks-how-to-stay-protected-in-the-age-of-intelligent-cyber-82aebbc0cef3?sk=575dff1e198f5622665909b8574b42e9) |
 | 4 | How AI is Reshaping the Cyber Kill Chain: A Complete Guide to AI-Accelerated Threats and Modern Defense Strategies | 2026-06-03 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-03-how-ai-is-reshaping-the-cyber-kill-chain-a-complete-guide-to/) | [Read](https://medium.com/@divyesh.vaishanv/how-ai-is-reshaping-the-cyber-kill-chain-a-complete-guide-to-ai-accelerated-threats-and-modern-5a7b3b9eb06a?sk=5bad2f7c57e29e9532c3030d760c7fa5) |
@@ -30,4 +30,4 @@ reviewed and published by Divyesh Vaishnav.
 Follow me on [Medium](https://medium.com/@divyesh.vaishanv) for the latest articles.
 
 ---
-*Last updated: 08 Jun 2026*
+*Last updated: 09 Jun 2026*
