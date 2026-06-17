@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding AI-Driven Reconnaissance and Attack Surface Discovery: What Every CISO Needs to Know in 2026</title>
+    <meta name="author" content="Divyesh Vaishnav">
+    <meta name="description" content="A deep-dive into AI-driven reconnaissance and attack surface discovery — mechanics, risks, CERT-In blueprint guidance, and enterprise defensive strategies for 2026.">
+    <meta name="keywords" content="Cybersecurity, AI Security, Attack Surface Management, Reconnaissance, CISO">
+    <style>body{font-family:Georgia,serif;max-width:720px;margin:0 auto;padding:40px 20px;line-height:1.8;color:#1a1a1a}h1{font-size:2.2em;margin-bottom:.3em}h2{font-size:1.5em;margin-top:2em}h3{font-size:1.2em}blockquote{border-left:4px solid #4f7fff;margin:1.5em 0;padding:.5em 1.5em;background:#f8f9fa}code{background:#f1f3f5;padding:2px 6px;border-radius:3px}img{max-width:100%;height:auto;border-radius:8px}figure{margin:1.5em 0}figcaption{text-align:center;font-size:.85em;color:#666;margin-top:8px}ul,ol{padding-left:1.5em}li{margin-bottom:.5em}</style>
+</head>
+<body>
+<article>
+<h1>Understanding AI-Driven Reconnaissance and Attack Surface Discovery: What Every CISO Needs to Know in 2026</h1>
+
+<p>Imagine a threat actor who never sleeps, never makes mistakes in data aggregation, processes thousands of IP addresses in seconds, and adapts its attack strategy in real time based on what it discovers. This is no longer a hypothetical scenario from a cyberpunk novel — it is the operational reality that enterprise security teams face today. AI-driven reconnaissance and attack surface discovery have fundamentally altered the economics and timelines of cyberattacks, compressing what once took skilled red teams weeks into automated workflows that execute in hours or even minutes.</p><figure><img src="img1.jpg" alt="Abstract visualization of AI-powered network scanning and attack surface mapping across digital infrastructure" /><figcaption>Abstract visualization of AI-powered network scanning and attack surface mapping across digital infrastructure</figcaption></figure>
+
+<p>The Indian Computer Emergency Response Team (CERT-In), in its landmark <em>Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure</em> (Version 1.0, May 2026), formally acknowledges this paradigm shift. The blueprint identifies AI-enabled reconnaissance and attack surface mapping as one of the most critical and immediate threats facing organisations across all sectors. For CISOs, IT leaders, security architects, and governance professionals, understanding the mechanics, implications, and defensive countermeasures of this threat is no longer optional — it is a strategic imperative.</p>
+
+<p>This article provides a comprehensive deep-dive into AI-driven reconnaissance and attack surface discovery: what it means, how adversaries operationalise it, why traditional defences fall short, and what enterprises must do to reduce their exposure.</p>
+
+<blockquote><strong>"AI-assisted cyber exploitation reduces the time required for adversaries to identify, weaponize, and exploit vulnerabilities, exposed services, weak identities, insecure APIs, and misconfigured systems."</strong> — CERT-In Blueprint, May 2026</blockquote>
+
+<h2>What Is AI-Driven Reconnaissance? Redefining the Threat Baseline</h2>
+
+<p>Reconnaissance is the foundational phase of any cyberattack. Traditionally, it involved manual processes — searching Shodan, scraping LinkedIn, running Nmap scans, reading public documentation, and piecing together an organisation's digital footprint. Skilled attackers could accomplish this in days or weeks. The bottleneck was human cognitive bandwidth.</p>
+
+<p>AI eliminates that bottleneck entirely.</p>
+
+<p>AI-driven reconnaissance refers to the use of machine learning models, large language models (LLMs), autonomous agents, and AI-enabled automation platforms to perform attack surface discovery at machine speed and scale. According to the CERT-In blueprint, threat actors are now using AI systems to automate:</p>
+
+<ul>
+<li><strong>Attack surface discovery</strong> — systematically mapping all internet-facing assets, subdomains, cloud endpoints, APIs, and exposed services belonging to a target organisation</li>
+<li><strong>OSINT (Open Source Intelligence) aggregation</strong> — harvesting and correlating data from public sources including social media, job postings, code repositories, certificate transparency logs, DNS records, and regulatory filings</li>
+<li><strong>Identification of exposed services and APIs</strong> — detecting misconfigured or unprotected API endpoints, legacy services, shadow IT assets, and unauthenticated interfaces</li>
+<li><strong>Vulnerability analysis</strong> — cross-referencing discovered assets against known CVE databases, exploit repositories, and vendor advisories to identify exploitable weaknesses</li>
+<li><strong>Exploit adaptation and chaining</strong> — intelligently combining multiple lower-severity vulnerabilities into high-impact attack chains</li>
+<li><strong>Malicious code generation</strong> — using generative AI to create custom exploit code tailored to specific target environments</li>
+<li><strong>Automated exploitation workflows</strong> — orchestrating end-to-end attack sequences with minimal human intervention</li>
+</ul>
+
+<p>The result is a reconnaissance capability that is faster, more thorough, more accurate, and more scalable than anything human attackers could achieve manually. More alarmingly, the CERT-In blueprint notes that these capabilities are lowering the technical barrier to entry — enabling even semi-skilled or untrained threat actors to launch sophisticated, targeted attacks at scale.</p>
+
+<figure><img src="img2.jpg" alt="Complex enterprise cloud infrastructure representing the expanding modern attack surface" /><figcaption>Complex enterprise cloud infrastructure representing the expanding modern attack surface</figcaption></figure><h2>The Expanding Attack Surface: Why Organisations Are More Exposed Than Ever</h2>
+
+<p>To appreciate the severity of AI-driven reconnaissance, it is essential to understand the context in which it operates. Modern enterprise environments are characterised by explosive growth in their digital attack surface — and AI-powered adversaries are perfectly positioned to exploit this complexity.</p>
+
+<p>The CERT-In blueprint highlights that organisations are increasingly dependent on:</p>
+
+<ul>
+<li>Cloud-native infrastructure and multi-cloud environments</li>
+<li>APIs connecting internal and external services</li>
+<li>Interconnected digital services and SaaS platforms</li>
+<li>Software supply chains with third-party and open-source dependencies</li>
+<li>Operational technologies (OT) increasingly connected to IT networks</li>
+<li>AI-enabled platforms and autonomous systems</li>
+</ul>
+
+<p>Each of these represents a potential entry point. A single misconfigured S3 bucket, an unpatched API gateway, a shadow IT application deployed without security review, or a vulnerable third-party library can become the foothold from which an AI-assisted attack escalates into full organisational compromise.</p>
+
+<p>The blueprint makes a particularly sobering observation: <em>"Vulnerabilities affecting a single software component, cloud service, AI integration, supplier, or exposed interface may potentially create cascading impact across interconnected environments."</em> This systemic risk is what makes AI-driven reconnaissance so dangerous — adversaries do not need to find a major vulnerability. They need to find any vulnerability, and AI gives them the ability to find it faster than defenders can patch it.</p>
+
+<figure><img src="img3.jpg" alt="Security operations center dashboard showing real-time threat detection and monitoring capabilities" /><figcaption>Security operations center dashboard showing real-time threat detection and monitoring capabilities</figcaption></figure><h2>How AI Reconnaissance Works: A Technical Walkthrough</h2>
+
+<p>Understanding the mechanics of AI-driven reconnaissance helps security teams build more effective defences. Here is how a sophisticated AI-assisted reconnaissance campaign typically unfolds:</p>
+
+<h3>Phase 1: Automated OSINT Collection and Correlation</h3>
+<p>AI agents begin by harvesting publicly available information at scale. LLMs can process and synthesise unstructured data from diverse sources — job postings that reveal technology stacks, GitHub repositories containing hardcoded credentials or infrastructure details, LinkedIn profiles identifying key personnel and their roles, SSL certificate logs exposing subdomains, and DNS records revealing cloud provider relationships. What a human analyst might spend a week correlating, an AI system can accomplish in hours, producing a rich, structured intelligence picture of the target organisation.</p>
+
+<h3>Phase 2: Attack Surface Mapping</h3>
+<p>With the initial intelligence gathered, AI-driven tools perform systematic attack surface mapping. This includes port scanning and service fingerprinting across all discovered IP ranges, subdomain enumeration, API endpoint discovery, cloud asset identification, and detection of internet-facing administrative interfaces. Modern AI-assisted tools can intelligently prioritise this scanning based on likelihood of vulnerability, rather than exhaustively scanning everything with equal weight.</p>
+
+<h3>Phase 3: Vulnerability Analysis and Prioritisation</h3>
+<p>The discovered assets are automatically cross-referenced against vulnerability databases, exploit repositories, and threat intelligence feeds. AI models can predict exploitability based on asset characteristics, identify vulnerability chains, and prioritise targets based on their likely business impact. This transforms raw vulnerability data into an actionable attack roadmap — a capability that previously required experienced penetration testers to develop manually.</p>
+
+<h3>Phase 4: Exploit Adaptation and Weaponisation</h3>
+<p>Generative AI can then adapt existing exploit code or generate new malicious scripts tailored to the specific versions, configurations, and environments discovered during reconnaissance. This dramatically compresses the time between vulnerability discovery and weaponisation. The CERT-In blueprint notes that agentic AI systems can execute this entire process semi-autonomously or fully autonomously within highly compressed timeframes.</p>
+
+<p><em>[Suggested diagram: A linear kill chain flow diagram showing the four phases of AI-driven reconnaissance, with arrows indicating automation at each stage and timelines comparing traditional vs. AI-assisted attack preparation]</em></p>
+
+<h2>Why Traditional Defences Are Insufficient</h2>
+
+<p>The CERT-In blueprint is unambiguous on this point: <em>"Traditional static and signature-based approaches would be insufficient against rapidly evolving AI-enabled attack techniques involving automation, behavioural evasion, impersonation, and large-scale exploitation."</em></p>
+
+<p>Several characteristics of AI-driven reconnaissance make traditional defences particularly ineffective:</p>
+
+<ul>
+<li><strong>Speed asymmetry</strong>: AI reconnaissance operates faster than human-paced security reviews. By the time a quarterly vulnerability assessment identifies an exposed service, it may already have been discovered and exploited.</li>
+<li><strong>Scale and comprehensiveness</strong>: AI tools do not miss assets. They exhaustively enumerate everything discoverable, including shadow IT, forgotten subdomains, and legacy services that may not appear in internal asset inventories.</li>
+<li><strong>Adaptive evasion</strong>: AI-assisted reconnaissance can adjust its techniques to avoid triggering signature-based detection, distributing scans across time and IP addresses to evade rate-limiting and anomaly detection.</li>
+<li><strong>Continuous operation</strong>: Unlike human attackers who operate in campaigns, AI systems can conduct persistent, low-and-slow reconnaissance continuously, monitoring for new assets or vulnerabilities as they emerge.</li>
+<li><strong>Reduced exploitation timelines</strong>: The CERT-In blueprint explicitly warns that exploitation timelines are reducing significantly, meaning the window between a vulnerability becoming public and being actively exploited is shrinking from weeks to days or even hours.</li>
+</ul>
+
+<p>Periodic penetration tests, annual security audits, and reactive patching cycles were designed for a threat environment that no longer exists. Against AI-driven adversaries, these approaches create dangerous gaps.</p>
+
+<h2>Organisational Risk Implications: Who Is Most Exposed?</h2>
+
+<p>The CERT-In blueprint identifies vital sectors as facing elevated exposure, including government, finance, telecommunications, Digital Public Infrastructure, healthcare, energy, transportation, manufacturing, and digital services. However, the reality is that any organisation with an internet presence, cloud footprint, or API ecosystem is a potential target.</p>
+
+<p>Key risk factors that increase exposure to AI-driven reconnaissance include:</p>
+
+<ul>
+<li><strong>Large or complex cloud environments</strong> with distributed assets that are difficult to inventory comprehensively</li>
+<li><strong>Extensive API ecosystems</strong> connecting internal systems, partners, and customers</li>
+<li><strong>Active software development</strong> with frequent deployments that may inadvertently expose new attack surface</li>
+<li><strong>Third-party and supply chain dependencies</strong> that may introduce vulnerabilities outside the organisation's direct control</li>
+<li><strong>Shadow IT and unmanaged assets</strong> that fall outside formal security governance</li>
+<li><strong>Legacy systems</strong> with known but unpatched vulnerabilities that are difficult to remediate without operational disruption</li>
+<li><strong>AI system integrations</strong> that may themselves become targets of adversarial reconnaissance</li>
+</ul>
+
+<p>The business impact of successful exploitation following AI-driven reconnaissance can be severe: operational disruption, compromise of sensitive information, financial fraud, regulatory penalties, reputational damage, and in critical infrastructure contexts, broader national security implications.</p>
+
+<p><em>[Suggested comparison table: Risk exposure matrix showing sector, primary attack surface characteristics, and key AI reconnaissance threat vectors]</em></p>
+
+<h2>The CERT-In Blueprint's Defensive Framework: Key Controls for Attack Surface Management</h2>
+
+<p>The CERT-In blueprint provides a structured, implementation-oriented framework for reducing exposure to AI-driven reconnaissance. The following defensive measures are directly relevant to attack surface discovery and management:</p>
+
+<h3>1. Continuous Asset Visibility and Attack Surface Management</h3>
+<p>The blueprint places continuous asset visibility at the top of its technical defensive controls. Organisations must maintain a comprehensive, real-time inventory of all internet-facing assets, cloud resources, APIs, AI systems, and dependencies. This includes:</p>
+<ul>
+<li>Automated asset discovery and inventory management</li>
+<li>Shadow IT and shadow AI detection</li>
+<li>Cloud exposure monitoring across all cloud environments</li>
+<li>Dependency tracking using Software Bill of Materials (SBOM), AI Bill of Materials (AIBOM), Cryptographic Bill of Materials (CBOM), and Quantum Bill of Materials (QBOM) frameworks</li>
+<li>Attack surface monitoring for newly exposed or misconfigured assets</li>
+</ul>
+
+<p>The logic is straightforward: you cannot defend what you cannot see. If your asset inventory is incomplete, AI-driven adversaries will discover assets you do not know you have — and exploit them before you can respond.</p>
+
+<h3>2. Continuous Exposure Management</h3>
+<p>The blueprint establishes continuous exposure management as a core defensive principle. This means moving beyond periodic vulnerability assessments to continuous, automated scanning and remediation workflows. Key measures include:</p>
+<ul>
+<li>Continuous vulnerability scanning of all internet-facing assets</li>
+<li>Cloud security posture assessment and misconfiguration detection</li>
+<li>API security testing integrated into development pipelines</li>
+<li>Rapid remediation workflows with defined SLAs based on risk severity</li>
+<li>Validation that remediation has been effective, not just that tickets have been closed</li>
+</ul>
+
+<h3>3. Secure Configuration and Hardening</h3>
+<p>Misconfigured systems are among the most common attack surface elements discovered through AI-driven reconnaissance. The blueprint recommends hardened baselines, continuous configuration auditing, drift monitoring, and secure administrative controls. Every unnecessary service, open port, or permissive access control represents an opportunity for AI reconnaissance tools to identify and exploit.</p>
+
+<h3>4. API Security</h3>
+<p>APIs deserve special attention because they are both ubiquitous and frequently overlooked in security programs. The blueprint recommends API security testing, secrets management, and penetration testing specifically targeting API endpoints. AI-driven reconnaissance tools are particularly effective at discovering undocumented or shadow APIs that may lack authentication or authorisation controls.</p>
+
+<h3>5. Identity and Access Security</h3>
+<p>Weak or compromised identities are a primary target of AI-assisted reconnaissance, particularly through OSINT correlation of credential data from breaches and social engineering. The blueprint recommends Multi-Factor Authentication (MFA), Privileged Access Management (PAM), least-privilege principles, service account governance, and continuous access reviews.</p>
+
+<h3>6. xBOM Adoption for Supply Chain Visibility</h3>
+<p>The blueprint places particular emphasis on Software Bill of Materials (SBOM) and related xBOM frameworks as essential tools for supply chain transparency. AI-driven reconnaissance increasingly targets software dependencies and third-party components, making comprehensive dependency visibility a critical defensive capability. Organisations should adopt SBOM, AIBOM, CBOM, and QBOM mechanisms to improve component transparency, vulnerability impact assessment, and rapid exposure identification across their software and AI ecosystems.</p>
+
+<p><em>[Suggested architecture diagram: A layered defensive architecture showing attack surface management controls at each layer — perimeter, cloud, API, identity, and supply chain — with continuous monitoring overlaying all layers]</em></p>
+
+<h2>AI-Aware Security Operations: Fighting AI With AI</h2>
+
+<p>One of the most important strategic insights in the CERT-In blueprint is the recognition that defending against AI-driven threats requires AI-augmented defences. The blueprint calls for modernising Security Operations Centres (SOCs) using AI capabilities — what it terms an "Agentic SOC" — to achieve continuous monitoring and rapid response at the speed and scale that AI-driven threats demand.</p>
+
+<p>Key capabilities for AI-aware security operations relevant to reconnaissance and attack surface threats include:</p>
+
+<ul>
+<li><strong>Behavioural analytics and anomaly detection</strong> — identifying unusual scanning activity, abnormal API access patterns, or suspicious OSINT-related queries that may indicate an adversary in the reconnaissance phase</li>
+<li><strong>Threat intelligence integration</strong> — correlating internal telemetry with external intelligence on AI-assisted attack trends and known threat actor reconnaissance techniques</li>
+<li><strong>Detection engineering</strong> — developing adaptive, behaviour-based detection rules that can identify reconnaissance activity even when it is designed to evade signature-based controls</li>
+<li><strong>Threat hunting</strong> — proactively searching for indicators of reconnaissance activity within organisational environments, including suspicious DNS queries, unusual outbound connections, and anomalous API usage</li>
+<li><strong>AI-assisted defensive operations</strong> — using AI for automated alert triage, threat correlation, and investigation support to accelerate defender response times</li>
+</ul>
+
+<p>The blueprint is clear that security automation must be implemented with human oversight, particularly for high-impact decisions. Automated triage and enrichment are appropriate, but critical response actions should require human approval with full audit trails.</p>
+
+<h2>Governance and Accountability: The Leadership Imperative</h2>
+
+<p>Effective defence against AI-driven reconnaissance is not purely a technical challenge — it requires strong governance, executive accountability, and organisational readiness. The CERT-In blueprint outlines several governance measures that are directly relevant:</p>
+
+<ul>
+<li><strong>Leadership oversight and accountability</strong>: Executives must have visibility into attack surface exposure metrics and AI-related cyber risks, with defined risk ownership and cross-functional coordination</li>
+<li><strong>Continuous risk assessment</strong>: Regular exposure reviews across digital environments and dependencies, with asset inventories maintained using xBOM frameworks</li>
+<li><strong>Third-party and supply chain governance</strong>: Vendor assessments, contractual security controls, and dependency visibility to manage risks from AI-assisted attacks targeting supply chain weaknesses</li>
+<li><strong>Security metrics and governance reporting</strong>: Tracking vulnerability metrics, exposure trends, remediation timelines, and monitoring coverage to provide governance visibility into attack surface management effectiveness</li>
+<li><strong>Continuous security validation</strong>: Regular vulnerability assessments, penetration testing including AI-assisted assessments, adversarial simulations, and independent audits aligned with CERT-In guidelines</li>
+</ul>
+
+<p><em>[Suggested process flow diagram: A governance cycle showing continuous exposure assessment → risk-based prioritisation → remediation → validation → governance reporting → leadership review → updated risk posture]</em></p>
+
+<h2>Implementation Roadmap: Building Maturity Against AI Reconnaissance Threats</h2>
+
+<p>Organisations should approach their defence against AI-driven reconnaissance in a phased, risk-informed manner. The following maturity progression aligns with the CERT-In blueprint's implementation guidance:</p>
+
+<h3>Foundation Phase: Visibility and Inventory</h3>
+<p>Before any other defensive measure can be effective, organisations must achieve comprehensive visibility into their attack surface. This means deploying automated asset discovery tools, establishing continuous cloud posture monitoring, implementing API inventory management, and adopting SBOM frameworks for software dependency visibility. Without this foundation, all other controls have blind spots that AI-driven adversaries will find.</p>
+
+<h3>Intermediate Phase: Continuous Exposure Management</h3>
+<p>With visibility established, organisations should implement continuous vulnerability scanning, automated misconfiguration detection, and rapid remediation workflows. This phase also involves hardening internet-facing assets, implementing strong API security controls, and establishing identity governance programs to reduce the credential-based attack surface that AI reconnaissance tools exploit.</p>
+
+<h3>Advanced Phase: AI-Aware Detection and Response</h3>
+<p>At this maturity level, organisations deploy behavioural analytics, threat hunting programs, and AI-assisted defensive operations to detect and respond to reconnaissance activity in near-real time. Detection engineering capabilities are developed to identify AI-driven scanning and OSINT correlation attempts. Threat intelligence is integrated to provide early warning of emerging AI-assisted attack techniques targeting the organisation's sector.</p>
+
+<h3>Optimising Phase: Continuous Validation and Adaptive Defence</h3>
+<p>The most mature organisations continuously validate their defences through adversarial simulations, red team exercises, and AI-assisted penetration testing that mirrors the techniques used by actual threat actors. Security controls are continuously updated based on evolving threat intelligence, and governance mechanisms ensure that the organisation's attack surface management program adapts as the technology environment and threat landscape evolve.</p>
+
+<h2>Measurable Outcomes: How to Know Your Defences Are Working</h2>
+
+<p>Organisations should track specific metrics to measure the effectiveness of their attack surface management and anti-reconnaissance programs:</p>
+
+<ul>
+<li><strong>Attack surface coverage</strong>: Percentage of internet-facing assets included in continuous monitoring and vulnerability scanning</li>
+<li><strong>Mean Time to Discover (MTTD)</strong>: How quickly new assets or exposures are identified after they appear</li>
+<li><strong>Mean Time to Remediate (MTTR)</strong>: Average time from vulnerability discovery to validated remediation, segmented by severity</li>
+<li><strong>Exposure reduction rate</strong>: Trend in the number of known exploitable exposures over time</li>
+<li><strong>Shadow IT/Shadow AI detection rate</strong>: Number of unmanaged assets discovered and brought under governance</li>
+<li><strong>API security coverage</strong>: Percentage of active APIs included in security testing programs</li>
+<li><strong>Misconfiguration detection and remediation rate</strong>: Frequency and resolution speed of cloud and system misconfigurations</li>
+<li><strong>Reconnaissance detection rate</strong>: Number of suspected reconnaissance activities detected and investigated per period</li>
+</ul>
+
+<h2>Conclusion: The Urgency of Acting Now</h2>
+
+<p>AI-driven reconnaissance and attack surface discovery represent a fundamental shift in the threat landscape — one that demands an equally fundamental shift in how organisations approach exposure management and defensive security. The CERT-In blueprint's core message is clear: exploitation timelines are shrinking, attacks are becoming increasingly autonomous, and traditional periodic and reactive security approaches are no longer sufficient.</p>
+
+<p>The organisations that will successfully defend against AI-driven reconnaissance are those that adopt continuous exposure management as a strategic priority, invest in comprehensive asset visibility including cloud and supply chain dependencies, implement AI-aware security operations capable of detecting reconnaissance activity at machine speed, and maintain strong governance and executive accountability for attack surface risk.</p>
+
+<p>The good news is that AI is not exclusively an adversarial tool. The same capabilities that enable AI-driven reconnaissance can be harnessed defensively — to discover your own attack surface before adversaries do, to detect reconnaissance activity in your environment, and to accelerate remediation of the exposures that AI-driven attackers seek to exploit. The race between AI-powered offence and AI-augmented defence is already underway. The organisations that act with urgency and strategic clarity will be the ones that stay ahead.</p>
+
+<blockquote><strong>Key Takeaway for Security Leaders:</strong> Treat your external attack surface as a living, dynamic entity that requires continuous monitoring, not periodic snapshots. Assume that sophisticated adversaries are already using AI to map your environment. Your defensive posture must match their operational tempo — and that requires AI-augmented, continuously validated, governance-backed attack surface management programs aligned with frameworks like the CERT-In blueprint.</blockquote>
+
+<h3>References</h3>
+<ul>
+<li>CERT-In, <em>Blueprint for Reducing Exposure and Defending against AI-Assisted Vulnerabilities Exploitation in Digital Infrastructure</em>, Version 1.0, May 2026</li>
+<li>CERT-In, <em>Comprehensive Cyber Security Audit Policy Guidelines</em></li>
+<li>CERT-In, <em>Technical Guidelines on SBOM, QBOM, CBOM, AIBOM, and HBOM</em>, Version 2.0</li>
+<li>CERT-In, <em>Guidelines for Secure Application Design, Development, Implementation and Operations</em></li>
+</ul>
+</article>
+<footer style="margin-top:3em;padding-top:1em;border-top:1px solid #eee;font-size:.85em;color:#666;">
+  <p>Written by <strong>Divyesh Vaishnav</strong> · #Cybersecurity #AI Security #Attack Surface Management #Reconnaissance #CISO</p>
+</footer>
+</body>
+</html>
