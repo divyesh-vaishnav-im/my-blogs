@@ -9,7 +9,7 @@ Personal blog articles on technology, cybersecurity, self-improvement, and life.
 
 | # | Title | Date | GitHub Pages | Medium |
 |---|-------|------|:---:|:---:|
-| 1 | Understanding AI-Driven Reconnaissance and Attack Surface Discovery: What Every CISO Needs to Know in 2026 | 2026-06-17 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-17-understanding-ai-driven-reconnaissance-and-attack-surface-di/) | ⏳ Pending |
+| 1 | Understanding AI-Driven Reconnaissance and Attack Surface Discovery: What Every CISO Needs to Know in 2026 | 2026-06-17 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-17-understanding-ai-driven-reconnaissance-and-attack-surface-di/) | [Read](https://medium.com/@divyesh.vaishanv/understanding-ai-driven-reconnaissance-and-attack-surface-discovery-what-every-ciso-needs-to-know-f01b36982ba6?sk=e1bbcf53795b2971fb991783665aa246) |
 | 2 | Kiro vs Claude: Which AI Tool Should You Actually Use in 2026? | 2026-06-17 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-17-kiro-vs-claude-which-ai-tool-should-you-actually-use-in-2026/) | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-17-kiro-vs-claude-which-ai-tool-should-you-actually-use-in-2026/) |
 | 3 | CERT-In's 60-Day Cybersecurity Roadmap: A Practical Breakdown for Enterprise Leaders | 2026-06-15 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-15-cert-in-s-60-day-cybersecurity-roadmap-a-practical-breakdown/) | [Read](https://medium.com/@divyesh.vaishanv/cert-ins-60-day-cybersecurity-roadmap-a-practical-breakdown-for-enterprise-leaders-e4cf5b808874?postPublishedType=repub) |
 | 4 | Vulnerability Management in the AI Era: A Strategic Framework for Enterprise Security | 2026-06-09 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-08-vulnerability-management-in-the-ai-era-a-comprehensive-bluep/) | [Read](https://medium.com/@divyesh.vaishanv/vulnerability-management-in-the-ai-era-a-strategic-framework-for-enterprise-security-765747516fe5?sk=3adbe88b306c8b7d1eba7ba6e44e1a4d) |
@@ -33,4 +33,4 @@ reviewed and published by Divyesh Vaishnav.
 Follow me on [Medium](https://medium.com/@divyesh.vaishanv) for the latest articles.
 
 ---
-*Last updated: 17 Jun 2026*
+*Last updated: 18 Jun 2026*
