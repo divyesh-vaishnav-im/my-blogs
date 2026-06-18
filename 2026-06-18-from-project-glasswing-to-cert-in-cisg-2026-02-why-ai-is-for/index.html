@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Project Glasswing to CERT-In CISG-2026-02: Why AI Is Forcing the Evolution from Vulnerability Management to Continuous Exposure Management</title>
+    <meta name="author" content="Divyesh Vaishnav">
+    <meta name="description" content="How Project Glasswing's AI-driven vulnerability discovery and CERT-In CISG-2026-02 together signal a fundamental shift from periodic vulnerability management to continuous exposure management.">
+    <meta name="keywords" content="Cybersecurity, Vulnerability Management, AI Security, CERT-In, Continuous Exposure Management">
+    <style>body{font-family:Georgia,serif;max-width:720px;margin:0 auto;padding:40px 20px;line-height:1.8;color:#1a1a1a}h1{font-size:2.2em;margin-bottom:.3em}h2{font-size:1.5em;margin-top:2em}h3{font-size:1.2em}blockquote{border-left:4px solid #4f7fff;margin:1.5em 0;padding:.5em 1.5em;background:#f8f9fa}code{background:#f1f3f5;padding:2px 6px;border-radius:3px}img{max-width:100%;height:auto;border-radius:8px}figure{margin:1.5em 0}figcaption{text-align:center;font-size:.85em;color:#666;margin-top:8px}ul,ol{padding-left:1.5em}li{margin-bottom:.5em}</style>
+</head>
+<body>
+<article>
+<h1>From Project Glasswing to CERT-In CISG-2026-02: Why AI Is Forcing the Evolution from Vulnerability Management to Continuous Exposure Management</h1>
+
+<blockquote><strong>Executive Summary:</strong> The cybersecurity industry is at an inflection point. Project Glasswing — a large-scale AI-driven vulnerability discovery initiative — demonstrated that artificial intelligence can identify software weaknesses at a speed and scale that fundamentally outpaces traditional security programs. In parallel, India's CERT-In released CISG-2026-02, a strategic blueprint that acknowledges this new reality and calls for a shift from periodic vulnerability management to continuous exposure management. This article examines both developments in depth, explains why they represent a structural change in how organizations must think about security, and provides CISOs, SOC managers, and security architects with a practical roadmap for adapting their programs before adversaries exploit the gap.</blockquote>
+
+<h2>Introduction: Cybersecurity's AI Inflection Point</h2>
+
+<p>For the better part of two decades, enterprise vulnerability management followed a predictable rhythm. Quarterly assessments. Monthly patch cycles. Annual penetration tests. Risk scores calculated from CVSS vectors. Remediation tickets routed through change management boards that moved at the speed of organizational bureaucracy rather than the speed of attacker innovation.</p><figure><img src="img1.jpg" alt="Abstract visualization of AI-driven cybersecurity threat detection across a digital network" /><figcaption>Abstract visualization of AI-driven cybersecurity threat detection across a digital network</figcaption></figure>
+
+<p>That rhythm is now broken — and the break is permanent.</p>
+
+<p>Artificial intelligence has entered both sides of the cybersecurity equation simultaneously. On the defensive side, AI promises faster detection, smarter triage, and more intelligent prioritization. On the offensive side — and this is the part that demands urgent attention — AI is enabling threat actors to discover vulnerabilities, develop exploits, and launch attacks at a scale and velocity that no human-driven security program can match using traditional methods.</p>
+
+<p>The evidence for this shift is no longer theoretical. It is documented, demonstrated, and increasingly operationalized. Project Glasswing provided one of the clearest illustrations of what AI-assisted vulnerability discovery looks like at scale. And CERT-In's CISG-2026-02 guidance represents one of the most substantive regulatory responses to this new reality, signaling that governments and oversight bodies are beginning to understand that yesterday's compliance frameworks are architecturally insufficient for tomorrow's threat environment.</p>
+
+<p>Understanding both developments — and the connection between them — is essential for any security leader who wants to build a program that remains relevant in the years ahead.</p>
+
+<figure><img src="img2.jpg" alt="Developer analyzing code for security vulnerabilities on multiple screens" /><figcaption>Developer analyzing code for security vulnerabilities on multiple screens</figcaption></figure><h2>Project Glasswing: The Wake-Up Call the Industry Needed</h2>
+
+<h3>What Is Project Glasswing?</h3>
+
+<p>Project Glasswing is an AI-driven vulnerability discovery initiative designed to demonstrate — and stress-test — the capability of large language models and automated reasoning systems to identify security weaknesses in software at scale. Named after the glasswing butterfly, whose transparent wings reveal what lies beneath the surface, the project was built around a central question: <em>Can AI find what human researchers miss, and can it do so faster than attackers can exploit it?</em></p>
+
+<p>The answer, in both cases, was a qualified but alarming yes.</p>
+
+<p>Glasswing used a combination of AI-assisted static analysis, dynamic fuzzing guided by machine learning models, and semantic code understanding to systematically analyze large codebases for vulnerability patterns. Unlike traditional automated scanners that rely on known signatures and rule sets, the AI components in Glasswing were capable of reasoning about code behavior, inferring intent, and identifying novel vulnerability classes that had not been previously catalogued.</p>
+
+<p>The results were significant not just in terms of the number of vulnerabilities discovered, but in the <em>nature</em> of those discoveries. Glasswing surfaced complex, multi-step vulnerability chains — the kind that typically require a senior security researcher with years of experience to identify manually. The AI was doing in hours what would have taken a skilled human researcher days or weeks.</p>
+
+<h3>Why Project Glasswing Was Created</h3>
+
+<p>The initiative emerged from a recognition within the security research community that the economics of vulnerability discovery were shifting in favor of attackers. Nation-state threat actors and well-funded criminal organizations had begun investing heavily in AI-assisted offensive tooling. The defensive community needed to understand what those capabilities looked like, how effective they were, and what the implications were for organizations that had built their security programs around assumptions that were becoming outdated.</p>
+
+<p>Glasswing was, in part, a controlled experiment in adversarial capability projection. By building and deploying AI-driven vulnerability discovery in a research context, the teams involved could generate concrete data about discovery rates, vulnerability classes, and the types of software most susceptible to AI-assisted analysis — data that could then inform defensive strategy.</p>
+
+<p>There was also a secondary motivation: to accelerate the responsible disclosure pipeline. If AI could identify vulnerabilities faster, it could also help organizations understand their exposure before adversaries did, provided the right governance structures were in place to act on the findings quickly.</p>
+
+<h3>The Role of AI in Vulnerability Discovery</h3>
+
+<p>To appreciate what Glasswing demonstrated, it helps to understand what AI brings to vulnerability discovery that traditional tools do not.</p>
+
+<p>Traditional vulnerability scanners operate on pattern matching. They compare code or runtime behavior against a database of known vulnerability signatures. They are fast and scalable, but they are fundamentally backward-looking — they can only find what has already been defined as a problem. Zero-day vulnerabilities, novel attack patterns, and complex logic flaws that emerge from the interaction of multiple code components are largely invisible to these tools.</p>
+
+<p>AI-assisted vulnerability discovery operates differently. Large language models trained on vast corpora of code, security advisories, CVE databases, and exploit documentation develop an internalized understanding of what vulnerable code <em>looks like</em> — not just at the syntactic level, but at the semantic level. They can recognize patterns of unsafe memory handling, improper input validation, authentication logic flaws, and race conditions even when those patterns appear in novel forms that do not match any existing signature.</p>
+
+<p>More importantly, AI systems can reason about vulnerability chains. A single code weakness may be low-severity in isolation. But when combined with a configuration error, a privilege escalation path, and an exposed network service, it becomes a critical attack vector. Human researchers can identify these chains, but it takes time and expertise. AI systems, once trained appropriately, can map these chains systematically across entire codebases.</p>
+
+<p>Project Glasswing demonstrated this capability concretely, identifying not just isolated weaknesses but exploitable paths — the kind of findings that translate directly into attacker playbooks.</p>
+
+<h3>Lessons Learned from Large-Scale AI Vulnerability Discovery</h3>
+
+<p>Several critical lessons emerged from Glasswing and similar large-scale AI vulnerability discovery initiatives that security leaders should internalize:</p>
+
+<ul>
+<li><strong>Volume is no longer the bottleneck.</strong> Traditional security research was constrained by human bandwidth. AI removes that constraint. An AI system can analyze millions of lines of code continuously, without fatigue, without context-switching costs, and without the diminishing returns that affect human researchers over long engagements.</li>
+<li><strong>Novelty is no longer a defense.</strong> Organizations that relied on the obscurity of custom or proprietary code as a form of security found that AI systems were as effective at analyzing unfamiliar codebases as familiar ones. The assumption that attackers would not invest the time to understand a bespoke system no longer holds when AI can accelerate that understanding dramatically.</li>
+<li><strong>The window between discovery and exploitation is shrinking.</strong> In the traditional threat model, there was a meaningful lag between when a vulnerability was discovered and when it was weaponized. AI compresses that lag. In some scenarios modeled during Glasswing-style research, the time from vulnerability identification to functional proof-of-concept exploit was measured in hours rather than days.</li>
+<li><strong>Supply chain exposure is amplified.</strong> AI-assisted analysis is particularly effective at identifying vulnerabilities in widely-used open-source libraries and third-party components — precisely the components that appear across thousands of enterprise environments. A single AI-discovered vulnerability in a foundational library can have cascading impact at a scale that dwarfs traditional CVE exploitation.</li>
+<li><strong>Defensive AI must be part of the response.</strong> The most important meta-lesson from Glasswing is that the only sustainable response to AI-assisted offensive capability is AI-assisted defensive capability. Organizations that attempt to respond to AI-driven threats using purely human-driven processes will find themselves permanently behind the curve.</li>
+</ul>
+
+<figure><img src="img3.jpg" alt="Conceptual image representing AI-powered cyber attack automation and threat actors" /><figcaption>Conceptual image representing AI-powered cyber attack automation and threat actors</figcaption></figure><h2>The New Threat Landscape: What Glasswing Reveals About Future Attacker Capabilities</h2>
+
+<h3>AI-Powered Reconnaissance and Exploit Development</h3>
+
+<p>Project Glasswing was a research initiative operating under responsible disclosure principles. But the capabilities it demonstrated do not belong exclusively to researchers. The same AI techniques — trained models, automated reasoning, semantic code analysis — are available to sophisticated threat actors who have the motivation and resources to deploy them offensively.</p>
+
+<p>The practical implications are significant. Consider a nation-state actor targeting critical infrastructure. Historically, that actor would invest months in reconnaissance, manual code review, and exploit development. With AI-assisted tooling modeled on Glasswing's approach, that timeline compresses dramatically. Reconnaissance becomes automated. Code analysis runs continuously. Exploit candidates are generated algorithmically and refined through automated testing.</p>
+
+<p>The result is a threat actor that can operate at a pace and scale that traditional defensive programs were never designed to handle.</p>
+
+<h3>Automated Vulnerability Chaining</h3>
+
+<p>One of the most concerning capabilities demonstrated through AI-assisted security research is automated vulnerability chaining — the ability to identify how multiple low-severity weaknesses can be combined into a high-severity attack path. This is significant because most enterprise vulnerability management programs prioritize remediation based on individual vulnerability severity scores. A vulnerability rated CVSS 4.0 may not trigger urgent remediation. But three CVSS 4.0 vulnerabilities that chain together into a complete compromise path represent a critical risk that the scoring model does not capture.</p>
+
+<p>AI systems can map these chains systematically. Human-driven programs, constrained by bandwidth and siloed data, typically cannot. This creates an asymmetry that favors attackers who deploy AI-assisted analysis against defenders who do not.</p>
+
+<h3>Compression of Attacker Timelines</h3>
+
+<p>Perhaps the most operationally significant implication of Glasswing's findings is the compression of attacker timelines. The traditional security model assumed that organizations had days to weeks between the public disclosure of a vulnerability and widespread exploitation. That assumption underpinned the logic of monthly patch cycles and quarterly assessments.</p>
+
+<p>AI-assisted offensive tooling eliminates that assumption. When AI can discover vulnerabilities independently — without waiting for public CVE disclosure — and can generate functional exploits rapidly, the concept of a remediation window becomes meaningless for organizations that are not monitoring continuously.</p>
+
+<h2>Why Traditional Vulnerability Management Is Failing</h2>
+
+<p>The vulnerability management model that most enterprises operate today was designed for a different threat environment. Its core assumptions — that vulnerabilities are discovered periodically, that exploitation takes time, that risk can be managed through scheduled remediation cycles — are no longer valid in an AI-accelerated threat landscape.</p>
+
+<p>Quarterly assessments produce point-in-time snapshots of a dynamic attack surface. In the time between assessments, new assets are deployed, new code is shipped, new dependencies are introduced, and new vulnerabilities are created. The assessment captures none of this.</p>
+
+<p>Monthly patch cycles assume that the window between vulnerability disclosure and exploitation is measured in weeks. For many vulnerability classes in the current environment, that window is measured in days or hours. A patch cycle that operates on a monthly cadence is not a security control — it is a documentation exercise.</p>
+
+<p>Reactive remediation — responding to vulnerabilities after they are discovered and disclosed — means that organizations are perpetually behind the threat. In an environment where AI can discover vulnerabilities before they are publicly known, reactive programs have no visibility into their most significant risks.</p>
+
+<p>Legacy risk prioritization models based on CVSS scores alone fail to account for exploitability in context, asset criticality, threat intelligence, and vulnerability chaining. They produce prioritization lists that do not reflect actual organizational risk, leading to misallocation of remediation resources.</p>
+
+<p>The cumulative effect of these failures is an enterprise security posture that is structurally misaligned with the current threat environment — and that misalignment is widening as AI capabilities advance.</p>
+
+<h2>CERT-In CISG-2026-02: India's Strategic Response</h2>
+
+<h3>The Significance of CISG-2026-02</h3>
+
+<p>Against this backdrop, CERT-In's release of CISG-2026-02 represents a meaningful and substantive regulatory response. Rather than simply updating compliance checklists, the guidance acknowledges the structural shift in the threat landscape and articulates a new model for how organizations should approach security — one built around continuous exposure management rather than periodic vulnerability assessment.</p>
+
+<p>CISG-2026-02 is significant for several reasons. It explicitly recognizes the role of AI in both offensive and defensive security contexts. It moves away from prescriptive, point-in-time compliance requirements toward outcome-based, continuous security expectations. And it places supply chain security, AI-assisted testing, and rapid remediation at the center of organizational security obligations — precisely the areas that Project Glasswing's findings identified as most critically exposed.</p>
+
+<h3>Key Pillars of CISG-2026-02</h3>
+
+<p><strong>Governance and Accountability:</strong> The guidance establishes clear expectations for board-level and executive accountability for cybersecurity posture, moving security governance from a technical function to a strategic organizational responsibility.</p>
+
+<p><strong>Continuous Vulnerability Monitoring:</strong> CISG-2026-02 explicitly moves away from periodic assessment models, requiring organizations to implement continuous monitoring of their vulnerability exposure across all asset classes — including cloud infrastructure, third-party components, and operational technology environments.</p>
+
+<p><strong>AI-Assisted Security Testing:</strong> The guidance acknowledges that traditional penetration testing methodologies are insufficient for identifying the vulnerability classes that AI-assisted attackers can exploit, and calls for the integration of AI-assisted testing into organizational security validation programs.</p>
+
+<p><strong>Rapid Remediation Requirements:</strong> CISG-2026-02 establishes significantly compressed remediation timelines for critical and high-severity vulnerabilities, reflecting the reality that exploitation windows have shrunk dramatically in an AI-accelerated threat environment.</p>
+
+<p><strong>Supply Chain Security:</strong> Given the amplified risk that AI-assisted vulnerability discovery poses for widely-used components, the guidance places substantial emphasis on supply chain security — including software bill of materials requirements, third-party security assessments, and continuous monitoring of dependency vulnerabilities.</p>
+
+<p><strong>Security Validation:</strong> Rather than treating security testing as a compliance exercise, CISG-2026-02 frames security validation as an ongoing operational practice, requiring organizations to continuously verify that their controls are effective against current threat scenarios.</p>
+
+<p><strong>Incident Preparedness:</strong> The guidance strengthens incident response requirements, recognizing that even well-managed security programs will face breaches in an AI-driven threat environment, and that the quality of incident response will increasingly determine business impact.</p>
+
+<h2>Mapping Project Glasswing to CERT-In's Blueprint</h2>
+
+<p>The connection between Project Glasswing's findings and CISG-2026-02's requirements is not coincidental. The guidance appears to have been informed by an understanding of what AI-assisted vulnerability discovery reveals about organizational exposure. The following table maps key Glasswing findings to corresponding CERT-In requirements and the organizational actions they demand:</p>
+
+<table style="width:100%; border-collapse:collapse;">
+<tr style="background:#f2f2f2;"><th style="padding:8px; border:1px solid #ddd;">Project Glasswing Finding</th><th style="padding:8px; border:1px solid #ddd;">CERT-In CISG-2026-02 Requirement</th><th style="padding:8px; border:1px solid #ddd;">Required Organizational Action</th></tr>
+<tr><td style="padding:8px; border:1px solid #ddd;">AI discovers vulnerabilities faster than periodic assessments can detect them</td><td style="padding:8px; border:1px solid #ddd;">Continuous vulnerability monitoring mandate</td><td style="padding:8px; border:1px solid #ddd;">Implement always-on vulnerability scanning with real-time alerting</td></tr>
+<tr><td style="padding:8px; border:1px solid #ddd;">AI identifies complex vulnerability chains invisible to CVSS-based prioritization</td><td style="padding:8px; border:1px solid #ddd;">Risk-based prioritization with contextual factors</td><td style="padding:8px; border:1px solid #ddd;">Deploy attack path analysis and exposure-based risk scoring</td></tr>
+<tr><td style="padding:8px; border:1px solid #ddd;">Supply chain components are disproportionately exposed to AI-assisted analysis</td><td style="padding:8px; border:1px solid #ddd;">Software bill of materials and supply chain monitoring</td><td style="padding:8px; border:1px solid #ddd;">Maintain comprehensive SBOM and monitor dependency vulnerabilities continuously</td></tr>
+<tr><td style="padding:8px; border:1px solid #ddd;">Exploitation timelines have compressed from weeks to hours</td><td style="padding:8px; border:1px solid #ddd;">Compressed remediation SLAs for critical vulnerabilities</td><td style="padding:8px; border:1px solid #ddd;">Establish emergency patching capability with sub-24-hour deployment for critical CVEs</td></tr>
+<tr><td style="padding:8px; border:1px solid #ddd;">Traditional pen testing misses AI-discoverable vulnerability classes</td><td style="padding:8px; border:1px solid #ddd;">AI-assisted security testing requirements</td><td style="padding:8px; border:1px solid #ddd;">Integrate AI-driven DAST, fuzzing, and code analysis into security validation programs</td></tr>
+</table>
+
+<h2>The Rise of Continuous Exposure Management</h2>
+
+<h3>From Vulnerability Management to Exposure Management</h3>
+
+<p>The most important conceptual shift that both Project Glasswing and CISG-2026-02 demand is the move from vulnerability management to continuous exposure management. These are not synonyms, and the distinction matters enormously.</p>
+
+<p>Vulnerability management asks: <em>What vulnerabilities exist in our environment?</em> Exposure management asks: <em>What can an attacker actually do with our current security posture, right now, given the full context of our environment, our threat landscape, and our defensive controls?</em></p>
+
+<p>Exposure management integrates vulnerability data with asset criticality, threat intelligence, attack path analysis, control effectiveness validation, and business context to produce a dynamic, real-time picture of organizational risk. It replaces the static snapshot of a quarterly assessment with a continuously updated model of attacker opportunity.</p>
+
+<p>This is not simply a philosophical reframing. It requires different tools, different processes, different skill sets, and different governance structures. Organizations that attempt to relabel their existing vulnerability management programs as exposure management without making substantive changes will find themselves no better prepared for the AI-driven threat environment than they were before.</p>
+
+<h3>Attack Surface Management and Continuous Validation</h3>
+
+<p>Two capabilities are foundational to effective continuous exposure management: attack surface management and continuous security validation.</p>
+
+<p>Attack surface management requires organizations to maintain a comprehensive, continuously updated inventory of all assets — including shadow IT, cloud resources, third-party integrations, and external-facing components — and to understand the vulnerability exposure associated with each asset in the context of the broader environment. This is a significantly more complex undertaking than traditional asset management, and it requires automation to be operationally viable at enterprise scale.</p>
+
+<p>Continuous security validation — the practice of regularly testing whether security controls are actually effective against current attack techniques — addresses the gap between assumed security posture and actual security posture. Breach and attack simulation platforms, automated red teaming tools, and AI-assisted penetration testing all contribute to this capability. CISG-2026-02's emphasis on security validation reflects an understanding that in an AI-driven threat environment, the assumption that controls work is not a substitute for evidence that they work.</p>
+
+<h2>How Security Teams Must Adapt</h2>
+
+<h3>SOC Teams</h3>
+
+<p>SOC teams face the challenge of operationalizing continuous exposure management at scale. The current challenge for most SOC operations is alert volume — too many signals, too little context, too few analysts. AI-driven threat activity amplifies this problem by generating attack patterns that are more sophisticated, more varied, and faster-moving than traditional threat signatures.</p>
+
+<p>The required transformation involves integrating exposure management data into SOC workflows so that analysts understand not just what alerts are firing, but what the attacker's likely objective is given the current exposure landscape. This requires tighter integration between vulnerability management platforms, threat intelligence feeds, and SIEM/SOAR systems than most organizations currently have.</p>
+
+<h3>Vulnerability Management Teams</h3>
+
+<p>Vulnerability management teams must evolve from report-generating functions into operational risk management functions. This means moving beyond CVE tracking and patch status reporting to providing real-time exposure intelligence that informs business decisions. It requires adopting AI-assisted tools for vulnerability discovery and prioritization, and developing the analytical capability to interpret exposure data in business context.</p>
+
+<h3>DevSecOps Teams</h3>
+
+<p>DevSecOps teams are on the front line of the supply chain security challenge that Glasswing highlighted. The integration of AI-assisted security testing into CI/CD pipelines — including automated code analysis, dependency scanning, and AI-driven fuzzing — is no longer a best practice aspiration. Given CISG-2026-02's requirements and the threat landscape Glasswing documents, it is a baseline operational requirement.</p>
+
+<h3>Security Architects</h3>
+
+<p>Security architects must redesign security reference architectures to support continuous exposure management. This includes designing for observability — ensuring that all assets, connections, and data flows are visible and monitorable — and building remediation automation into infrastructure design rather than treating patching as a manual operational task.</p>
+
+<h2>Strategic Recommendations for CISOs</h2>
+
+<h3>Immediate Actions (0–30 Days)</h3>
+
+<ul>
+<li>Conduct an honest assessment of your current vulnerability management program against the continuous monitoring requirements of CISG-2026-02. Identify the gaps explicitly.</li>
+<li>Review your asset inventory completeness. If you cannot confidently enumerate all external-facing assets, that is your most urgent exposure risk.</li>
+<li>Assess your current remediation SLAs against the compressed timelines that AI-accelerated exploitation demands. Identify which critical vulnerability classes your current process cannot address within 24–48 hours.</li>
+<li>Brief your executive team and board on the Project Glasswing findings and their implications. The shift to continuous exposure management requires organizational investment that must be justified at the strategic level.</li>
+</ul>
+
+<h3>Medium-Term Actions (30–90 Days)</h3>
+
+<ul>
+<li>Evaluate and pilot continuous attack surface management tooling. Prioritize platforms that provide real-time asset discovery, vulnerability correlation, and attack path analysis.</li>
+<li>Integrate AI-assisted security testing into at least one critical application's development pipeline as a proof of concept for broader DevSecOps transformation.</li>
+<li>Develop a software bill of materials program for your most critical applications and begin establishing the processes for continuous dependency monitoring.</li>
+<li>Engage your incident response team in tabletop exercises that model AI-accelerated attack scenarios — specifically, scenarios where exploitation occurs within hours of vulnerability discovery.</li>
+</ul>
+
+<h3>Long-Term Transformation (90–365 Days)</h3>
+
+<ul>
+<li>Complete the transition from periodic vulnerability assessment to continuous exposure management across all asset classes.</li>
+<li>Implement breach and attack simulation or continuous security validation capabilities to provide ongoing evidence of control effectiveness.</li>
+<li>Establish AI-assisted vulnerability intelligence as a core input into risk prioritization, replacing or augmenting CVSS-only scoring models.</li>
+<li>Align your security governance reporting to CISG-2026-02's outcome-based framework, providing board-level visibility into exposure trends rather than compliance checkbox status.</li>
+</ul>
+
+<h2>Building an AI-Resilient Security Program: Enterprise Readiness Checklist</h2>
+
+<ul>
+<li>☐ Continuous asset discovery covering cloud, on-premises, OT, and third-party assets</li>
+<li>☐ Real-time vulnerability monitoring with threat intelligence integration</li>
+<li>☐ Attack path analysis and vulnerability chaining capability</li>
+<li>☐ AI-assisted security testing in CI/CD pipelines</li>
+<li>☐ Software bill of materials for critical applications</li>
+<li>☐ Sub-24-hour emergency patching capability for critical vulnerabilities</li>
+<li>☐ Continuous security validation (BAS or equivalent)</li>
+<li>☐ Exposure-based risk prioritization replacing CVSS-only models</li>
+<li>☐ Board-level security governance aligned to CISG-2026-02 expectations</li>
+<li>☐ Incident response playbooks tested against AI-accelerated attack scenarios</li>
+</ul>
+
+<h2>Challenges Organizations Will Face</h2>
+
+<p>The transformation from periodic vulnerability management to continuous exposure management is not straightforward, and organizations should approach it with clear eyes about the obstacles involved.</p>
+
+<p><strong>Budget limitations</strong> are real. Continuous monitoring platforms, AI-assisted testing tools, and the personnel required to operate them represent significant investment. The business case must be grounded in concrete risk reduction — specifically, the cost of breach scenarios enabled by the vulnerability classes that AI-assisted attackers can exploit.</p>
+
+<p><strong>Skills shortages</strong> are acute. The security talent market cannot supply enough professionals with the combined expertise in AI, vulnerability research, and security operations that continuous exposure management requires. Organizations must invest in upskilling existing teams and in automation that reduces the human bandwidth required for routine tasks.</p>
+
+<p><strong>Legacy technology</strong> creates visibility gaps that continuous monitoring cannot fully address. Assets that cannot be instrumented, patched, or monitored in real time represent persistent exposure that no software solution can eliminate. Organizations must develop explicit risk acceptance and compensating control strategies for legacy environments.</p>
+
+<p><strong>Tool sprawl</strong> is a compounding problem. Many organizations already operate dozens of security tools with limited integration. Adding continuous exposure management capabilities on top of an already fragmented toolset creates operational complexity that can undermine the very visibility it is intended to provide. Consolidation and integration architecture must be a priority.</p>
+
+<h2>Future Outlook: The AI Versus AI Cybersecurity Era</h2>
+
+<p>Project Glasswing and CISG-2026-02 together point toward a future in which the central dynamic of cybersecurity is AI versus AI — automated offensive systems probing continuously for exploitable exposure, and automated defensive systems monitoring, validating, and remediating continuously in response.</p>
+
+<p>In this future, human security professionals do not disappear. But their role shifts. Rather than performing the mechanical tasks of scanning, triaging, and patching, they focus on strategy, judgment, and governance — the activities that require contextual understanding and accountability that AI systems cannot provide.</p>
+
+<p>The organizations that will be best positioned in this future are those that begin the transition now — building the continuous monitoring capabilities, the AI-assisted testing programs, the exposure management frameworks, and the governance structures that CISG-2026-02 calls for. Those that wait for the threat to become undeniable before acting will find that the window for orderly transformation has closed.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the difference between vulnerability management and exposure management?</h3>
+<p>Vulnerability management focuses on identifying and remediating known software weaknesses. Exposure management takes a broader view, integrating vulnerability data with asset context, threat intelligence, attack path analysis, and control validation to provide a real-time picture of what an attacker can actually do in your environment right now.</p>
+
+<h3>Is CISG-2026-02 only relevant to Indian organizations?</h3>
+<p>While CISG-2026-02 is issued by India's CERT-In and applies directly to organizations operating in India, the principles it articulates — continuous monitoring, AI-assisted testing, compressed remediation timelines, supply chain security — reflect a global shift in security best practice that is relevant to any organization regardless of jurisdiction.</p>
+
+<h3>How does Project Glasswing differ from traditional penetration testing?</h3>
+<p>Traditional penetration testing is time-bound, scope-limited, and dependent on human researcher bandwidth. Project Glasswing-style AI-assisted vulnerability discovery operates continuously, at scale, across entire codebases, and can identify vulnerability classes — particularly complex chains and novel patterns — that time-constrained human testers routinely miss.</p>
+
+<h3>What is the most urgent action a CISO should take in response to these developments?</h3>
+<p>The most urgent action is an honest assessment of your current remediation velocity against realistic exploitation timelines. If your organization cannot patch a critical vulnerability within 24–48 hours of discovery, you have a structural gap that represents significant risk in an AI-accelerated threat environment. Closing that gap — through process change, automation, or both — should be the immediate priority.</p>
+
+<h2>Conclusion</h2>
+
+<p>Project Glasswing is not simply a research curiosity. It is a documented demonstration of a capability that is already being developed and deployed by sophisticated threat actors — the ability to discover vulnerabilities at scale, at speed, and with a level of analytical sophistication that traditional defensive programs were never designed to counter.</p>
+
+<p>CERT-In's CISG-2026-02 is not simply a compliance update. It is a strategic acknowledgment that the security model of the past two decades is architecturally insufficient for the threat environment of the next two years, and a call for organizations to make the structural changes required to remain defensible.</p>
+
+<p>Together, these two developments define the challenge that every security leader faces today: how to build a security program that operates at the speed and scale that AI-driven threats demand, within the resource and organizational constraints that every enterprise operates under.</p>
+
+<p>The answer is not to do more of what has always been done. It is to make the transition — deliberately, systematically, and urgently — from periodic vulnerability management to continuous exposure management. The organizations that make that transition successfully will be resilient. Those that do not will be exposed in ways that no compliance checkbox can protect them from.</p>
+
+<blockquote><strong>Key Takeaway:</strong> Project Glasswing proved that AI can find what humans miss, faster than humans can respond. CISG-2026-02 mandates that organizations build programs capable of operating in that reality. The gap between those two facts is where your security program needs to live — and where the work of the next year must be focused.</blockquote>
+</article>
+<footer style="margin-top:3em;padding-top:1em;border-top:1px solid #eee;font-size:.85em;color:#666;">
+  <p>Written by <strong>Divyesh Vaishnav</strong> · #Cybersecurity #Vulnerability Management #AI Security #CERT-In #Continuous Exposure Management</p>
+</footer>
+</body>
+</html>
