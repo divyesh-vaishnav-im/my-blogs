@@ -10,7 +10,7 @@ Personal blog articles on technology, cybersecurity, self-improvement, and life.
 | # | Title | Date | GitHub Pages | Medium |
 |---|-------|------|:---:|:---:|
 | 1 | From Project Glasswing to CERT-In CISG-2026-02: Why AI Is Forcing the Evolution from Vulnerability Management to Continuous Exposure Management | 2026-06-18 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-18-from-project-glasswing-to-cert-in-cisg-2026-02-why-ai-is-for/) | ⏳ Pending |
-| 2 | Jalebi Rocks Review – A Beautiful Story of Women, Family, and Finding Your Own Voice | 2026-06-18 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-18-jalebi-rocks-review-a-beautiful-story-of-women-family-and-fi/) | ⏳ Pending |
+| 2 | Jalebi Rocks Review – A Beautiful Story of Women, Family, and Finding Your Own Voice | 2026-06-18 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-18-jalebi-rocks-review-a-beautiful-story-of-women-family-and-fi/) | [Read](https://medium.com/@divyesh.vaishanv/jalebi-rocks-review-a-beautiful-story-of-women-family-and-finding-your-own-voice-5922c386ac90) |
 | 3 | Understanding AI-Driven Reconnaissance and Attack Surface Discovery: What Every CISO Needs to Know in 2026 | 2026-06-17 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-17-understanding-ai-driven-reconnaissance-and-attack-surface-di/) | [Read](https://medium.com/@divyesh.vaishanv/understanding-ai-driven-reconnaissance-and-attack-surface-discovery-what-every-ciso-needs-to-know-f01b36982ba6?sk=e1bbcf53795b2971fb991783665aa246) |
 | 4 | Kiro vs Claude: Which AI Tool Should You Actually Use in 2026? | 2026-06-17 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-17-kiro-vs-claude-which-ai-tool-should-you-actually-use-in-2026/) | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-17-kiro-vs-claude-which-ai-tool-should-you-actually-use-in-2026/) |
 | 5 | CERT-In's 60-Day Cybersecurity Roadmap: A Practical Breakdown for Enterprise Leaders | 2026-06-15 | [Read](https://divyesh-vaishnav-im.github.io/my-blogs/2026-06-15-cert-in-s-60-day-cybersecurity-roadmap-a-practical-breakdown/) | [Read](https://medium.com/@divyesh.vaishanv/cert-ins-60-day-cybersecurity-roadmap-a-practical-breakdown-for-enterprise-leaders-e4cf5b808874?postPublishedType=repub) |
@@ -35,4 +35,4 @@ reviewed and published by Divyesh Vaishnav.
 Follow me on [Medium](https://medium.com/@divyesh.vaishanv) for the latest articles.
 
 ---
-*Last updated: 18 Jun 2026*
+*Last updated: 19 Jun 2026*
